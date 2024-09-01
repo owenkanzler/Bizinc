@@ -2,7 +2,7 @@
 
 ## Section 1 - JavaScript
 
-**Q: What are the differences between `==` and `===` in JavaScript?**
+**Q: What are the differences between `==` and `===` in JavaScript?**  
 **A:** The `==` operator checks for equality of values with type coercion, meaning it converts the values to the same type before comparing them. In contrast, the `===` operator checks for strict equality, meaning it compares both the values and their types without type coercion.
 
 ## Section 2 - React
@@ -21,7 +21,7 @@ function ExampleComponent() {
     fetch("https://api.example.com/data")
       .then((response) => response.json())
       .then((data) => setData(data));
-  }, []); // Empty dependency array means this effect runs once after the initial render
+  }, []);
 
   return <div>{data ? JSON.stringify(data) : "Loading..."}</div>;
 }
